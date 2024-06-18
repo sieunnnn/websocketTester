@@ -127,7 +127,6 @@ export default defineComponent({
         }
       } catch (error) {
         console.error('HTTP 요청에 실패했어요.:', error);
-        console.log('연결에 실패 했어요.: ' + error.message);
         return;
       }
 
