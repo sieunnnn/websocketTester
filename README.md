@@ -25,6 +25,9 @@
 - 때문에 프로젝트를 클론받아서 실행 뒤, 테스트를 하시면 됩니다.
 
 ### 2. 영상으로 사용법 쉽게 보기
+클릭하면 바로 영상으로 이동합니다. 🍀 <br>
+
+<a href="https://www.youtube.com/watch?v=NXSc0LCAlmg"><img src="https://github.com/sieunnnn/websocketTester/assets/119668620/cf52b489-78d3-42b2-9a17-be71ea2a8ea0" width=600 /></a>
 
 <br>
 
