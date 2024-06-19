@@ -116,7 +116,7 @@ export default defineComponent({
         return;
       }
 
-      const socketUrl = `http://localhost:8080/ws?token=${connectionToken.value}`;
+      const socketUrl = `http://localhost:8080/wss?token=${connectionToken.value}`;
 
       try {
         const response = await fetch(socketUrl);
