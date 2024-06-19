@@ -23,7 +23,7 @@
       <div style="margin-top: 10px">
         <span style="font-weight: bold">만약 도움이 되셨다면 </span>
         <span>
-          <a href="" style="font-weight: bold">이곳</a>
+          <a href="https://github.com/sieunnnn/websocketTester" style="font-weight: bold">이곳</a>
         </span>
         <span style="font-weight: bold">에 방문하여 🌟 한번씩만 눌러 주세요.</span><br>
         <span style="font-weight: bold">개발자(취준생) 에게 큰 힘이 됩니다. 🍀</span>
