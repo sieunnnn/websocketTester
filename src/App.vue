@@ -116,7 +116,7 @@ export default defineComponent({
         return;
       }
 
-      const socketUrl = `${connectionUrl}`;
+      const socketUrl = `${connectionUrl.value}`;
 
       try {
         const response = await fetch(socketUrl);
