@@ -8,8 +8,8 @@
       <div style="margin-top: 10px">
         ✅ 웹소켓 프로토콜로 변경 되기 전, 딱 한번 prehandler 에서 토큰 인증을 시행 합니다. <br>
         <div  style="margin: 4px 0 10px 20px">
-          토큰 인증을 위해 http://localhost:8080/ws?token=${connectionToken.value} api 로 요청을 합니다. <br>
-          넘겨진 값을 사용 하여 토큰 인증을 하고, 문제가 없다면 모든 준비는 완료 됩니다.
+          토큰 인증을 위해 https://localhost:8080/wss?token=${Bearer accessToken} api 로 요청을 합니다. <br>
+          하지만 다른 주소를 사용할 수 있어서 주소를 받는 형식으로 변경하였습니다.
         </div>
         ✅ 웹소켓 프로토콜로 변경된 후에는 토큰 인증을 하지 않습니다.
       </div>
@@ -20,8 +20,8 @@
         </span>
         <span>을 방문해주세요.</span>
       </div>
-      <div style="margin-top: 10px">
-        <span style="font-weight: bold">만약 도움이 되셨다면 </span>
+      <div style="margin-top: 10px; font-size: 14px; font-style: italic">
+        <span style="font-weight: bold;">만약 도움이 되셨다면 </span>
         <span>
           <a href="https://github.com/sieunnnn/websocketTester" style="font-weight: bold">이곳</a>
         </span>
@@ -36,8 +36,8 @@
         </n-text>
       </n-h3>
       <div class="connect-container">
-        <n-input-group-label style="margin-right: 5px">🔑 인증 토큰</n-input-group-label>
-        <n-input v-model:value="connectionToken" size="small" type="text" placeholder="웹소켓 연결을 위한 토큰을 넣어주세요." :disabled="connected"/>
+        <n-input-group-label style="margin-right: 5px">🔑 연결 주소</n-input-group-label>
+        <n-input v-model:value="connectionUrl" size="small" type="text" placeholder="웹소켓 연결을 위한 엔드포인트를 넣어주세요." :disabled="connected"/>
         <n-button :disabled="connected" n-button type="primary" @click="connect" style="margin-left: 10px">
           연결 하기
         </n-button>
@@ -108,15 +108,15 @@ export default defineComponent({
     const publishDestination = ref('');
     const messages = ref<string[]>([]);
     const messageContent = ref('');
-    const connectionToken = ref('');
+    const connectionUrl = ref('');
 
     const connect = async () => {
-      if (!connectionToken.value) {
+      if (!connectionUrl.value) {
         alert('웹소켓 연결을 위한 토큰이 필요해요.');
         return;
       }
 
-      const socketUrl = `http://localhost:8080/wss?token=${connectionToken.value}`;
+      const socketUrl = `${connectionUrl}`;
 
       try {
         const response = await fetch(socketUrl);
@@ -207,7 +207,7 @@ export default defineComponent({
       publishDestination,
       messages,
       messageContent,
-      connectionToken,
+      connectionUrl,
       connect,
       subscribe,
       publish,
