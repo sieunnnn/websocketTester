@@ -25,6 +25,9 @@
 - 때문에 프로젝트를 클론받아서 실행 뒤, 테스트를 하시면 됩니다.
 
 ### 2. 영상으로 사용법 쉽게 보기
+클릭하면 바로 영상으로 이동합니다. 🍀 <br>
+
+<a href="https://www.youtube.com/watch?v=NXSc0LCAlmg"><img src="https://github.com/sieunnnn/websocketTester/assets/119668620/cf52b489-78d3-42b2-9a17-be71ea2a8ea0" width=600 /></a>
 
 <br>
 
@@ -65,12 +68,12 @@ server:
 ```
 
 
-### 3. chrome
+### 4. chrome
 - 크롬에 들어가서 주소창에 https://localhost:{port} 를 입력합니다.
 - `localhost 사이트로 이동(안전하지 않음)` 링크를 클릭하여 예외를 추가합니다.
 
 #### 🙏 _이는 개발 단계를 위함이며, 실제 프로덕션 환경에서는 유효한 SSL 인증서를 사용해주세요._
 
-### 4. 요청하기
+### 5. 요청하기
 - 이때 웹소켓 엔드 포인트는 `ws` 가 아닌 `wss` 여야 한다는 점 명심해주세요.
 - http 와 포트번호를 다르게 설정한 경우, 이에 유의하여 요청해주세요.
