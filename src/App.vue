@@ -6,19 +6,18 @@
         하지만 해당 테스터를 사용하기 위해서는 기능이 아래와 같은 로직을 가져야 합니다. <br>
       </div>
       <div style="margin-top: 10px">
-        ✅ 웹소켓 프로토콜로 변경 되기 전, 딱 한번 prehandler 에서 토큰 인증을 시행 합니다. <br>
+        ✅ 웹소켓 프로토콜로 변경 되기 전, 딱 한번 prehandler 에서 토큰 인증을 시행. <br>
         <div  style="margin: 4px 0 10px 20px">
-          토큰 인증을 위해 https://localhost:8080/wss?token=${Bearer accessToken} api 로 요청을 합니다. <br>
-          하지만 다른 주소를 사용할 수 있어서 주소를 받는 형식으로 변경하였습니다.
+          토큰 인증을 위해 연결 주소에 입력한 곳으로 요청을 합니다.
         </div>
-        ✅ 웹소켓 프로토콜로 변경된 후에는 토큰 인증을 하지 않습니다.
+        ✅ 웹소켓 프로토콜로 변경된 후에는 토큰 인증 패스. 🙋
       </div>
-      <div style="margin-top: 10px">
-        <span>해당 테스터를 사용한 프로젝트가 궁금하다면 </span>
+      <div style="margin-top: 20px; font-size: 16px">
+        <span>해당 테스터를 사용 하기 전에  </span>
         <span>
-          <a href="https://github.com/planner-project/backend">이곳</a>
+          <a href="https://github.com/sieunnnn/websocketTester">이곳</a>
         </span>
-        <span>을 방문해주세요.</span>
+        <span>을 먼저 방문해주세요.</span>
       </div>
       <div style="margin-top: 10px; font-size: 14px; font-style: italic">
         <span style="font-weight: bold;">만약 도움이 되셨다면 </span>
