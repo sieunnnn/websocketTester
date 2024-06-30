@@ -188,9 +188,11 @@ export default defineComponent({
       const input = event.target as HTMLInputElement;
       if (input && input.files) {
         selectedFiles.value = Array.from(input.files);
-        console.log('Selected files:', selectedFiles.value);
+
+        console.log('선택된 파일:', selectedFiles.value);
+
       } else {
-        console.error('No files found in the input event.');
+        console.error('파일을 찾을 수 없습ㄴ디ㅏ.');
       }
     };
 
@@ -211,7 +213,7 @@ export default defineComponent({
                   resolve({ name: file.name, content: reader.result as string });
                 };
                 reader.onerror = (error) => {
-                  console.error('FileReader error:', error);
+                  console.error('FileReader 오류:', error);
                   reject(error);
                 };
                 reader.readAsDataURL(file);
@@ -222,8 +224,6 @@ export default defineComponent({
 
       const messageObject = JSON.parse(messageContent.value);
       messageObject.images = encodedFiles.length > 0 ? encodedFiles : null;
-
-      console.log('Sending message object:', messageObject);
 
       client.value.publish({
         destination: publishDestination.value,
