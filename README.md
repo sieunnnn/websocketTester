@@ -11,6 +11,7 @@
 - [Stomp 를 사용하여 실시간 서비스 개발하기](https://sieunnnn.oopy.io/3be9e794-ec26-4b59-979d-4e79c8dc9542)
 - `예정` [websocket stomp 테스터 만들기 with sock.js](https://sieunnnn.oopy.io/309cf08f-0cf9-4fed-97c4-6a777fa9509a)
 - `예정` [Websocket Exception custom 구현기](https://sieunnnn.oopy.io/c7935a1f-4346-4693-a61b-963fb745e088)
+- `예정` [Websocket stomp 로 이미지도 전송할 수 있나요?](https://www.notion.so/sieun96/4d8398154cf54a179e5087e84716d595?pvs=4)
 
 <br>
 
