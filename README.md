@@ -9,10 +9,10 @@
 그렇게 테스터 만들기는 시작되었고, 조금 다듬어 **배포**를 하게 되었습니다. 🎉 <br>
 관련된 블로그 글은 아래에서 확인해주세요.
 - [Stomp 를 사용하여 실시간 서비스 개발하기](https://sieunnnn.oopy.io/3be9e794-ec26-4b59-979d-4e79c8dc9542)
-- `예정` [websocket stomp 테스터 만들기 with sock.js](https://sieunnnn.oopy.io/309cf08f-0cf9-4fed-97c4-6a777fa9509a)
+- [websocket stomp 테스터 만들기 with sock.js](https://sieunnnn.oopy.io/309cf08f-0cf9-4fed-97c4-6a777fa9509a)
 - `예정` [Websocket Exception custom 구현기](https://sieunnnn.oopy.io/c7935a1f-4346-4693-a61b-963fb745e088)
-- `예정` [Websocket stomp 로 이미지도 전송할 수 있나요?](https://www.notion.so/sieun96/4d8398154cf54a179e5087e84716d595?pvs=4)
 
+<br>
 <br>
 
 ## 시작 전 확인해주세요.
@@ -30,6 +30,7 @@
 
 <a href="https://www.youtube.com/watch?v=NXSc0LCAlmg"><img src="https://github.com/sieunnnn/websocketTester/assets/119668620/cf52b489-78d3-42b2-9a17-be71ea2a8ea0" width=600 /></a>
 
+<br>
 <br>
 
 ## http 를 https 로 변경하기 위한 과정
