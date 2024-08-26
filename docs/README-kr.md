@@ -50,7 +50,7 @@ server:
     enabled:
       true
     key-store:
-      ${ 키위 위치를 입력해주세요. }
+      ${ 키의 위치를 입력해주세요. }
     key-store-password:
       ${SPRING_DATASOURCE_PASSWORD}
     key-store-type:
